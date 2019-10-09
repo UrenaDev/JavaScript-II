@@ -66,8 +66,8 @@ multiplyNums(3, 7, console.log);
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  let evalItem = list.filter(listItem => listItem === item)[0];
-  return cb(evalItem === item)
+  let checkItem = list.filter(specificItem => specificItem === item)[0];
+  return cb(checkItem === item)
 }
 contains('yo-yo', items, console.log);
 
